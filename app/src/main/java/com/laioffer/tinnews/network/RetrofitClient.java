@@ -16,8 +16,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 
-    private static final String API_KEY = "f2952d37f66b4757bfead5234da49f3d";
-    private static final String BASE_URL = "https://newsapi.org/v2/";
+    private static final String API_KEY = Constant.API_KEY;
+    private static final String BASE_URL = Constant.BASE_URL;
 
     public static Retrofit newInstance(Context context) {
         // .addinterceptor:  add key into header, which is supported by NewsApi
